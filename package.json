@@ -1,0 +1,10 @@
+{
+  "name": "lifepage",
+  "author": "appalaszynski",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
