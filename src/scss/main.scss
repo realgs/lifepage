@@ -1,9 +1,11 @@
 // Utils
 @import 'utils/variables';
+@import 'utils/functions';
 
 // Vendors
 
 // Base
+@import 'base/reset';
 @import 'base/base';
 
 // Layout
