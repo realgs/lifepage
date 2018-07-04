@@ -1,3 +1,6 @@
+.ml {
+  margin-left: 3rem; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -8,3 +11,65 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #171d23; }
+
+.nav {
+  padding: 3rem 0;
+  border-bottom: 0.2rem solid #f3f8f6; }
+  .nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .nav__logo-box {
+    display: flex;
+    align-items: center; }
+  .nav__logo {
+    width: 4rem;
+    margin-right: 1.5rem; }
+  .nav__brand {
+    font-size: 2rem;
+    font-weight: 700; }
+  .nav__list {
+    list-style: none; }
+  .nav__item {
+    display: inline-block; }
+    .nav__item:not(:first-child) {
+      margin-left: 3rem; }
+  .nav__link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem; }
+    .nav__link:hover {
+      color: #4a5d70; }
+  .nav__right-menu {
+    display: flex;
+    align-items: center; }
+
+.container {
+  max-width: 114rem;
+  padding: 0 1.5rem;
+  margin: 0 auto; }
+
+.button {
+  background-color: #55d262;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2rem 2.2rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s; }
+  .button:hover {
+    background-color: #2ead3b; }

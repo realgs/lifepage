@@ -1,0 +1,16 @@
+.button {
+  background-color: $color-primary;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2rem 2.2rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: darken($color-primary, 15%);
+  }
+}
