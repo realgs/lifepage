@@ -1,0 +1,25 @@
+.hero {
+  padding-top: 10rem;
+  text-align: center;
+  margin-bottom: -7rem;
+
+  &__image {
+    width: 70rem;
+    position: relative;
+  }
+}
+
+.partners {
+  padding: 15rem 0 8rem 0;
+
+  &__logos {
+    max-width: 80rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    height: 2rem;
+    margin: 1rem 3rem;
+  }
+}

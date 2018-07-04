@@ -1,6 +1,6 @@
 .button {
   background-color: $color-primary;
-  color: white;
+  color: $color-tertiary;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.2rem 2.2rem;
@@ -12,5 +12,36 @@
 
   &:hover {
     background-color: darken($color-primary, 15%);
+  }
+
+  &--outline {
+    background-color: $color-tertiary;
+    color: $color-primary;
+    border: 0.1rem solid $color-primary;
+    transition: color, background-color 0.2s;
+
+    &:hover {
+      color: $color-tertiary;
+      background-color: $color-primary;
+    }
+  }
+
+  &--dark {
+    background-color: $color-text-dark;
+
+    &:hover {
+      background-color: lighten($color-text-dark, 20%);
+    }
+  }
+
+  &--dark-outline {
+    background-color: $color-tertiary;
+    color: $color-text-dark;
+    border: 1px solid $color-text-dark;
+
+    &:hover {
+      background-color: lighten($color-text-dark, 20%);
+      color: $color-tertiary;
+    }
   }
 }

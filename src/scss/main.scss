@@ -12,11 +12,16 @@
 
 // Layout
 @import 'layout/navigation';
+@import 'layout/features';
+@import 'layout/grid';
 
-// Componenst
+// Components
 @import 'components/container';
 @import 'components/button';
+@import 'components/middle-group';
+@import 'components/section';
 
 // Pages
+@import 'pages/home';
 
 // Themes

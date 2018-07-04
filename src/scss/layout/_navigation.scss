@@ -1,6 +1,9 @@
 .nav {
   padding: 3rem 0;
   border-bottom: 0.2rem solid $color-secondary;
+  // position: fixed;
+  // width: 100%;
+  // z-index: 999;
 
   &__container {
     display: flex;

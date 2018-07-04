@@ -9,3 +9,19 @@ body {
   font-size: 1.6rem;
   color: $color-text-dark;
 }
+
+.heading {
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  
+  &--big {
+    font-weight: 500;
+    font-size: 3.2rem;
+  }
+}
+
+.paragraph {
+  color: $color-text-light;
+}

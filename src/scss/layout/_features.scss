@@ -1,0 +1,28 @@
+.features {
+  max-width: 110rem;
+  margin: 2rem auto 0 auto;
+  border-right: 2px solid $color-secondary;
+  border-left: 2px solid $color-secondary;
+  padding: 4rem 0;
+
+  &__box {
+    padding: 4rem;
+    
+    &--border-bottom {
+      border-bottom: 2px solid $color-secondary;
+    }
+
+    &--border-left {
+      border-left: 2px solid $color-secondary;
+    }
+  }
+
+  &__image {
+    width: 8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+}

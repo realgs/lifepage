@@ -1,6 +1,15 @@
 .ml {
   margin-left: 3rem; }
 
+.mb {
+  margin-bottom: 3rem; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.mb-5 {
+  margin-bottom: 5rem; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -21,6 +30,18 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   color: #171d23; }
+
+.heading {
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 400; }
+  .heading--big {
+    font-weight: 500;
+    font-size: 3.2rem; }
+
+.paragraph {
+  color: #888d92; }
 
 .nav {
   padding: 3rem 0;
@@ -55,6 +76,31 @@ body {
     display: flex;
     align-items: center; }
 
+.features {
+  max-width: 110rem;
+  margin: 2rem auto 0 auto;
+  border-right: 2px solid #f3f8f6;
+  border-left: 2px solid #f3f8f6;
+  padding: 4rem 0; }
+  .features__box {
+    padding: 4rem; }
+    .features__box--border-bottom {
+      border-bottom: 2px solid #f3f8f6; }
+    .features__box--border-left {
+      border-left: 2px solid #f3f8f6; }
+  .features__image {
+    width: 8rem;
+    margin-bottom: 2.5rem; }
+  .features__title {
+    margin-bottom: 2rem; }
+
+.row {
+  display: flex; }
+  .row .col-4 {
+    flex-basis: calc(100% / 12 * 4); }
+  .row .col-8 {
+    flex-basis: calc(100% / 12 * 8); }
+
 .container {
   max-width: 114rem;
   padding: 0 1.5rem;
@@ -73,3 +119,52 @@ body {
   transition: background-color 0.2s; }
   .button:hover {
     background-color: #2ead3b; }
+  .button--outline {
+    background-color: white;
+    color: #55d262;
+    border: 0.1rem solid #55d262;
+    transition: color, background-color 0.2s; }
+    .button--outline:hover {
+      color: white;
+      background-color: #55d262; }
+  .button--dark {
+    background-color: #171d23; }
+    .button--dark:hover {
+      background-color: #3f5061; }
+  .button--dark-outline {
+    background-color: white;
+    color: #171d23;
+    border: 1px solid #171d23; }
+    .button--dark-outline:hover {
+      background-color: #3f5061;
+      color: white; }
+
+.middle-group {
+  max-width: 45rem;
+  text-align: center;
+  margin: 0 auto; }
+
+.section {
+  background-color: white; }
+  .section--dark {
+    background-color: #f3f8f6;
+    border-top: 2px solid #edf4f1;
+    border-bottom: 2px solid #edf4f1; }
+
+.hero {
+  padding-top: 10rem;
+  text-align: center;
+  margin-bottom: -7rem; }
+  .hero__image {
+    width: 70rem;
+    position: relative; }
+
+.partners {
+  padding: 15rem 0 8rem 0; }
+  .partners__logos {
+    max-width: 80rem;
+    text-align: center;
+    margin: 0 auto; }
+  .partners__logo {
+    height: 2rem;
+    margin: 1rem 3rem; }
