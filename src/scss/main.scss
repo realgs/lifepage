@@ -1,25 +1,29 @@
 // Utils
 @import 'utils/variables';
 @import 'utils/functions';
+@import 'utils/mixins';
 @import 'utils/helpers';
 
 // Vendors
 
 // Base
 @import 'base/reset';
-@import 'base/base';
 @import 'base/typography';
 
 // Layout
 @import 'layout/navigation';
-@import 'layout/features';
+@import 'layout/sidebar';
 @import 'layout/grid';
+@import 'layout/footer';
 
 // Components
+@import 'components/backdrop';
 @import 'components/container';
+@import 'components/logo';
 @import 'components/button';
 @import 'components/middle-group';
 @import 'components/section';
+@import 'components/input';
 
 // Pages
 @import 'pages/home';

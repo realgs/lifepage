@@ -1,33 +1,67 @@
 .nav {
   padding: 3rem 0;
-  border-bottom: 0.2rem solid $color-secondary;
-  // position: fixed;
-  // width: 100%;
-  // z-index: 999;
+  background-color: $color-secondary;
+  border-bottom: 0.2rem solid $color-secondary-dark;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @include respond('small') {
+    padding: 1rem 0;
+  }
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond('small') {
+      justify-content: center;
+    }
   }
 
-  &__logo-box {
-    display: flex;
-    align-items: center;
-  }
+  &__button {
+    width: 3rem;
+    height: 3rem;
+    margin-right: auto;
+    display: none;
+    position: relative;
+    cursor: pointer;
 
-  &__logo {
-    width: 4rem;
-    margin-right: 1.5rem;
-  }
+    @include respond('small') {
+      display: block;
+    }
 
-  &__brand {
-    font-size: 2rem;
-    font-weight: 700;
+    & span {
+      background-color: $color-primary;
+      height: 0.3rem;
+      width: 100%;
+      display: block;
+      position: absolute;
+
+      &:nth-child(1) {
+        top: calc(0rem + 0.4rem);
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(3) {
+        bottom: calc(0rem + 0.4rem);
+      }
+    }   
   }
 
   &__list {
     list-style: none;
+
+    @include respond('small') {
+      display: none;
+    }
   }
 
   &__item {
@@ -45,12 +79,16 @@
     font-size: 1.5rem;
 
     &:hover {
-      color: lighten($color-text-dark, 25%);
+      color: lighten($color-tertiary, 25%);
     }
   }
 
   &__right-menu {
     display: flex;
     align-items: center;
+
+    @include respond('small') {
+      display: none;
+    }
   }
 }

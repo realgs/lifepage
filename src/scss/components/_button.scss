@@ -1,6 +1,4 @@
 .button {
-  background-color: $color-primary;
-  color: $color-tertiary;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.2rem 2.2rem;
@@ -8,40 +6,49 @@
   letter-spacing: 0.1rem;
   font-weight: 600;
   display: inline-block;
-  transition: background-color 0.2s;
+  transition: color, background-color 0.2s;
 
-  &:hover {
-    background-color: darken($color-primary, 15%);
+  &--primary {
+    background-color: $color-primary;
+    color: $color-secondary;
+    border: 0.1rem solid $color-primary;
+
+    &:hover {
+      background-color: darken($color-primary, 15%);
+      border: 0.1rem solid darken($color-primary, 15%);
+    }
   }
 
   &--outline {
-    background-color: $color-tertiary;
+    background-color: transparent;
     color: $color-primary;
     border: 0.1rem solid $color-primary;
-    transition: color, background-color 0.2s;
 
     &:hover {
-      color: $color-tertiary;
+      color: $color-secondary;
       background-color: $color-primary;
     }
   }
 
   &--dark {
-    background-color: $color-text-dark;
+    color: $color-secondary;
+    background-color: $color-tertiary;
+    border: 0.1rem solid $color-tertiary;
 
     &:hover {
-      background-color: lighten($color-text-dark, 20%);
+      background-color: lighten($color-tertiary, 20%);
+      border: 0.1rem solid lighten($color-tertiary, 20%);
     }
   }
 
   &--dark-outline {
-    background-color: $color-tertiary;
-    color: $color-text-dark;
-    border: 1px solid $color-text-dark;
+    background-color: transparent;
+    color: $color-tertiary;
+    border: 1px solid $color-tertiary;
 
     &:hover {
-      background-color: lighten($color-text-dark, 20%);
-      color: $color-tertiary;
+      background-color: $color-tertiary;
+      color: $color-secondary;
     }
   }
 }

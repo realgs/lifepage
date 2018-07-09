@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+
+  @include respond('small') {
+    margin-right: auto;
+  }
+  
+  &__logo {
+    width: 4rem;
+    margin-right: 1.5rem;
+  }
+
+  &__brand {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}

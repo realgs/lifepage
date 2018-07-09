@@ -1,6 +1,26 @@
 .row {
   display: flex;
 
+  &--align-center {
+    align-items: center;
+  }
+
+  @include respond('small') {
+    flex-direction: column;
+  }
+
+  .col {
+    flex-shrink: 0;
+  }
+  
+  .col-2 {
+    flex-basis: calc(100% / 12 * 2);
+  }
+
+  .col-3 {
+    flex-basis: calc(100% / 12 * 3);
+  }
+
   .col-4 {
     flex-basis: calc(100% / 12 * 4);
   }
