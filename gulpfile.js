@@ -6,7 +6,7 @@ const browsersync = require('browser-sync');
 gulp.task('browsersync', () => {
   browsersync.init({
     server: {
-      baseDir: './dist',
+      baseDir: './docs',
     },
     notify: false,
   });
@@ -18,7 +18,7 @@ gulp.task('scss', () => {
       outputStyle: 'nested',
     }).on('error', sass.logError))
     .pipe(rename('style.css'))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./docs/css'))
     .pipe(browsersync.stream());
 });
 
@@ -27,7 +27,7 @@ gulp.task('watch:scss', () => {
 });
 
 gulp.task('watch:html', () => {
-  gulp.watch("./dist/*.html").on('change', browsersync.reload);
+  gulp.watch("./docs/*.html").on('change', browsersync.reload);
 });
 
 gulp.task('dev', gulp.parallel('watch:html', 'watch:scss', 'browsersync'));

@@ -16,7 +16,7 @@
   <nav class="nav">
     <div class="container">
       <div class="nav__container">
-        <div class="nav__button">
+        <div class="nav__button" aria-label="Toggle navigation button">
             <span></span>
             <span></span>
             <span></span>
@@ -87,15 +87,17 @@
 
   <!-- HERO SECTION -->
   <div class="section">
-    <div class="hero">
-
-      <div class="middle-group">
-        <h1 class="heading heading--big">Begin your journey with a stunning website</h1>
-        <p class="paragraph mb-3">Lifepage unities beauty and advanced technology to create your stunning website. It's easy and free.</p>
-        <a href="#" class="button button--outline">Get started</a>
+    <div class="container">
+      <div class="hero">
+  
+        <div class="middle-group">
+          <h1 class="heading heading--big">Begin your journey with a stunning website</h1>
+          <p class="paragraph mb-3">Lifepage unities beauty and advanced technology to create your stunning website. It's easy and free.</p>
+          <a href="#" class="button button--outline">Get started</a>
+        </div>
+        
+        <img class="hero__image" src="images/hero.png" alt="Development process">
       </div>
-      
-      <img class="hero__image" src="images/hero.png" alt="Development process">
     </div>
   </div>
 
@@ -181,13 +183,13 @@
       <div class="themes">
 
         <div class="row row--align-center">
-          <div class="col-4">
+          <div class="col-4 text-center-sm mb-sm-4">
             <p class="heading">Pick the theme you love</p>
             <p class="paragraph mb-3">Represent your business or ideas in a most beautiful way with our themes. All of our themes are designed and developed by world top designers and developers and every piece of work is unique and made with care.</p>
             <a href="#" class="button button--dark-outline">Browse all templates</a>
           </div>
           <div class="col-8">
-            <img class="themes__image" src="images/themes/theme1.png" alt="">
+            <img class="themes__image" style="width: 100%; margin-right: auto; padding-left: 2rem" src="images/themes/theme1.png" alt="">
           </div>
         </div>
 
@@ -218,13 +220,14 @@
       <div class="testimonials">
 
         <div class="row row--align-center">
-          <div class="col-4">
+          <div class="col-4 text-center-sm mb-sm-4">
             <p class="heading">Stories from our valueable customers</p>
             <p class="paragraph mb-3">Over 44,306 people and businesses have come to us for their websites. Read their reviews of Lifepage to learn how great
               website changed their world.</p>
             <a href="#" class="button button--primary">Read all reviews</a>
           </div>
           <div class="col-8">
+            
             <div class="testimonial">
               <div class="testimonial__heading">
                 <img class="testimonial__image" src="https://randomuser.me/api/portraits/men/20.jpg" alt="">
@@ -236,6 +239,7 @@
               <p class="paragraph paragraph--dark mb-2">This process was so easy and quick. I'm so glad we were referred to this program. If we had gone the traditional route we would have spent much more and would have been limited one design ideas/interpretation. Extremley pleased with how this turned out!</p>
               <a href="#" class="testimonial__link">See the website</a>
             </div>
+            
           </div>
         </div>
 
@@ -251,10 +255,10 @@
         <div class="row row--align-center">
 
           <div class="col-8">
-            <img style="width: 60rem; margin-right: auto" src="images/themes/theme1.png" alt="">
+            <img class="mb-sm-4" style="width: 100%; margin-right: auto; padding-right: 2rem" src="images/themes/theme1.png" alt="">
           </div>
 
-          <div class="col-4">
+          <div class="col-4 text-center-sm">
             <p class="heading">The features you need for your website</p>
             <p class="paragraph mb-3">Create a free website that looks exactly the way you want. With our website builder, you get beautiful galleries, professional image collections, secure hosting, personalized domains, the best SEO and so much more. Your Lifepage website is automatically mobile optimized so it looks stunning when people visit you on the go.</p>
             <a href="#" class="button button--dark-outline">Get started now</a>
@@ -272,7 +276,7 @@
   
         <div class="row row--align-center">
 
-          <div class="col-4">
+          <div class="col-4 text-center-sm mb-sm-4">
             <p class="heading">Reach and grow your audience</p>
             <p class="paragraph mb-3">Our all-in-one platform gives you everything you need to run your business. Whether you're just getting started or are an established brand. our powerfull platform helps your business grow.</p>
             <p class="paragraph mb-3">We provide you with a comperehensive set of marketing tools to engage with your audience, get found across search and social, and grow your following.</p>
@@ -280,7 +284,7 @@
           </div>
 
           <div class="col-8">
-            <img class="themes__image" src="images/audience.png" alt="">
+            <img class="themes__image" style="width: 100%; margin-right: auto; padding-left: 2rem" src="images/audience.png" alt="">
           </div>
         </div>
   
@@ -319,8 +323,8 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="row" style="justify-content: space-between;">
-        <div class="col" style="flex-basis: 34rem;">
+      <div class="row justify-space-between row--test">
+        <div class="col footer__info-column">
           <div class="logo mb-3">
             <img class="logo__logo" src="images/logo.png" alt="Lifepage">
             <p class="logo__brand">Lifepage</p>
@@ -328,7 +332,7 @@
           <p class="paragraph mb-3">Lifepage is leading cloud-based development platform with millions of users worldwide. We make it easy for everyone to create a beautiful, professional web presence.</p>
           <p class="paragraph">&copy; Lifepage, 2018.</p>
         </div>
-        <div class="col">
+        <div class="col mb-sm-2">
           <p class="footer__menu-title">Products</p>
           <ul class="footer__list">
             <li class="footer__list-item"><a class="footer__link" href="#">Domain Name</a></li>
@@ -340,7 +344,7 @@
             <li class="footer__list-item"><a class="footer__link" href="#">Features</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col mb-sm-2">
           <p class="footer__menu-title">Company</p>
           <ul class="footer__list">
             <li class="footer__list-item"><a class="footer__link" href="#">About lifepage</a></li>
