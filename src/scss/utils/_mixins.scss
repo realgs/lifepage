@@ -9,8 +9,8 @@
  */
 
 $breakpoints: (
+  'smaller': (max-width: px-to-em(800px)),
   'small': (max-width: px-to-em(900px)),
-  'medium': (max-width: px-to-em(900px)),
   'large': (max-width: px-to-em(1100px)),
   'huge': (min-width: px-to-em(1800px)),
   'extra': (min-width: px-to-em(2700px)),

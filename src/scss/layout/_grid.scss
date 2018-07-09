@@ -1,12 +1,12 @@
 .row {
   display: flex;
 
-  &--align-center {
-    align-items: center;
-  }
-
   @include respond('small') {
     flex-direction: column;
+  }
+
+  &--align-center {
+    align-items: center;
   }
 
   .col {

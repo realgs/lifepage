@@ -1,11 +1,13 @@
 .sidebar {
   position: fixed;
-  z-index: 999;
+  z-index: 4;
   background-color: $color-secondary;
   border-right: 0.2rem solid $color-primary;
   box-shadow: 1rem 0rem 2rem rgba(0, 0, 0, 0.24);
   min-height: 100vh;
   overflow-y: scroll;
+  bottom: 0;
+  top: 0;
   width: 25rem;
   display: block;
   transform: translateX(-110%);

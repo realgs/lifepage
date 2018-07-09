@@ -2,6 +2,19 @@
   padding: 10rem 0;
   border-top: 2px solid $color-secondary-dark;
 
+  @include respond('small') {
+    padding: 4rem 0;
+  }
+
+  &__info-column {
+    flex-basis: 34rem;
+
+    @include respond('small') {
+      flex-basis: auto;
+      margin-bottom: 3rem;
+    }
+  }
+
   &__menu-title {
     font-weight: 600;
     margin-bottom: 2rem;
