@@ -53,3 +53,39 @@
 .justify-space-between {
   justify-content: space-between;
 }
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.pr-sm-4 {
+  padding-right: 4rem;
+
+  @include respond('small') {
+    padding-right: 0;
+  }
+}
+
+.pl-sm-4 {
+  padding-left: 4rem;
+
+  @include respond('small') {
+    padding-left: 0;
+  }
+}
+
+.max-width-60 {
+  max-width: 60rem;
+
+  @include respond('small') {
+    max-width: 100%;
+  }
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}

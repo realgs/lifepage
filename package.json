@@ -1,6 +1,9 @@
 {
   "name": "lifepage",
   "author": "appalaszynski",
+  "scripts": {
+    "dev": "gulp dev"
+  },
   "devDependencies": {
     "browser-sync": "^2.24.5",
     "gulp": "^4.0.0",
