@@ -1,13 +1,1 @@
-const sidebarButton = document.querySelector('.nav__button');
-const sidebar = document.querySelector('.sidebar');
-const backdrop = document.querySelector('.backdrop');
-
-sidebarButton.addEventListener('click', () => {
-  sidebar.classList.toggle('sidebar__open');
-  backdrop.classList.toggle('backdrop__open');
-});
-
-backdrop.addEventListener('click', () => {
-  sidebar.classList.remove('sidebar__open');
-  backdrop.classList.remove('backdrop__open');
-});
+var sidebarButton=document.querySelector(".nav__button"),sidebar=document.querySelector(".sidebar"),backdrop=document.querySelector(".backdrop");sidebarButton.addEventListener("click",function(){sidebar.classList.toggle("sidebar__open"),backdrop.classList.toggle("backdrop__open")}),backdrop.addEventListener("click",function(){sidebar.classList.remove("sidebar__open"),backdrop.classList.remove("backdrop__open")});
