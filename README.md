@@ -4,12 +4,12 @@
   </a>
   <h1>Lifepage</h1>
   <p>
-    <em>Landing Page Build with Sass</em>
+    <em>Landing Page Built with Sass</em>
   </p>
   <br>
 </div>
 
-**Lifepage** is landing page built with Sass. I am not the author of UX/UI design - I found this layout on [Behance](https://www.behance.net) and made landing page based on PNG image.
+**Lifepage** is landing page built with Sass. I am not the author of UX/UI design - I found this layout on [Behance](https://www.behance.net) and coded it based on PNG image.
 
 ---
 
