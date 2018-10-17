@@ -35,19 +35,19 @@ $ npm install
 
 ## Usage
 
+### Deploying Locally
+
+```bash
+$ npm run build
+```
+
 ### Running Development Server
 
 ```bash
 $ npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) to see your app.
-
-### Deploying Locally
-
-```bash
-$ npm run build
-```
+Open [http://localhost:3000](http://localhost:3000) to see your app if it's not done automatically.
 
 ---
 
